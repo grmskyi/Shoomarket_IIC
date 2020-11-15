@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кошик</title>
+    <link rel="stylesheet" href="{% static 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' %}">
+    <link rel="icon" href="{% static 'img/mdb-favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.11.2/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">ShooMarket</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="/">Головна</a>
+    <a class="p-2 text-dark" href="/about-us">Про нас</a>
+    <a class="p-2 text-dark" href="/catalog">Каталог Взуття</a>
+      <a class="p-2 text-dark" href="/basket"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z"/>
+  <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+</svg></a>
+  </nav>
+  <a class="btn btn-outline-primary" href="user">Увійти</a>
+</div>
+
+<div class="top-container pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Кошик</h1>
+  <p class="lead">Тут будуть відображатись вибрані вами товари для купівлі.</p>
+</div>
+
+<section class="text-center mb-4">
+        <div class="row wow fadeIn">
+            <div class="col-lg-3 col-md-6 md-4">
+                 <div class="card">
+
+                     <div class="view overlay">
+                         <img class="card-img-top" src="https://tooposhop.com/image/cache/catalog/Dr.%20Martens/M0019-1000x1000.jpg"
+                         alt="dr. Martens">
+                         <a href="" >
+                             <div class="mask rgba-white-slight"></div>
+                         </a>
+                     </div>
+
+
+                     <div class="card-body text-center">
+                         <a href="" class="grey-text">
+                             <h5>Ботінки</h5>
+                         </a>
+                         <h5>
+                             <strong>
+                                 <a href="" class="dark-grey-text">
+                                    Dr. Martens 1460
+                                     <span class="badge badge-pill danger-color">
+                                         Вибраний товар
+                                     </span>
+                                 </a>
+                             </strong>
+                         </h5>
+                         <h4 class="font-weight-bold dark-text">
+                             <strong>4500 ₴</strong>
+                         </h4>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 md-4">
+                 <div class="card">
+
+                     <div class="view overlay">
+                         <img class="card-img-top" src="https://www.pngkey.com/png/full/459-4597522_adidas-originals-n-5923-navy-lilla-donna-illustration.png"
+                         alt="Adidas">
+                         <a href="" >
+                             <div class="mask rgba-white-slight"></div>
+                         </a>
+                     </div>
+
+
+                     <div class="card-body text-center">
+                         <a href="" class="grey-text">
+                             <h5>Кросівки</h5>
+                         </a>
+                         <h5>
+                             <strong>
+                                 <a href="" class="dark-grey-text">
+                                     Adidas Originals
+                                     <span class="badge badge-pill danger-color">
+                                         Вибраний товар
+                                     </span>
+                                 </a>
+                             </strong>
+                         </h5>
+                         <h4 class="font-weight-bold dark-text">
+                             <strong>3250 ₴</strong>
+                         </h4>
+                     </div>
+                 </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 md-4">
+                 <div class="card">
+
+                     <div class="view overlay">
+                         <img class="card-img-top" src="https://gboots.com.ua/image/cache/catalog/import_yml/363/7/363766ded-1000x1000.jpg"
+                         alt="Nike">
+                         <a href="" >
+                             <div class="mask rgba-white-slight"></div>
+                         </a>
+                     </div>
+
+
+                     <div class="card-body text-center">
+                         <a href="" class="grey-text">
+                             <h5>Кросівки</h5>
+                         </a>
+                         <h5>
+                             <strong>
+                                 <a href="" class="dark-grey-text">
+                                     Nike Air Max 270
+                                     <span class="badge badge-pill danger-color">
+                                         Вибраний товар
+                                     </span>
+                                 </a>
+                             </strong>
+                         </h5>
+                         <h4 class="font-weight-bold dark-text">
+                             <strong>5000 ₴</strong>
+                         </h4>
+                     </div>
+                 </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 md-4">
+                 <div class="card">
+
+                     <div class="view overlay">
+                         <img class="card-img-top" src="https://images.puma.net/images/373309/05/w/1000/h/1000/fnd//"
+                         alt="Puma">
+                         <a href="" >
+                             <div class="mask rgba-white-slight"></div>
+                         </a>
+                     </div>
+
+
+                     <div class="card-body text-center">
+                         <a href="" class="grey-text">
+                             <h5>Кросівки</h5>
+                         </a>
+                         <h5>
+                             <strong>
+                                 <a href="" class="dark-grey-text">
+                                     Puma RS-2k
+                                     <span class="badge badge-pill danger-color">
+                                         Вибраний товар
+                                     </span>
+                                 </a>
+                             </strong>
+                         </h5>
+                         <h4 class="font-weight-bold dark-text">
+                             <strong>4190 ₴</strong>
+                         </h4>
+                     </div>
+                 </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+
+<footer class="page-footer font-small mdb-color lighten-1">
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href=""> ShooMarket</a>
+  </div>
+</footer>
+</body>
+</html>
